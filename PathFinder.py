@@ -37,10 +37,10 @@ def main():
         with open(dijkstra_table_serialized_filename, 'rb') as f:
             dijkstra_table = pickle.load(f)
 
-    ends = [Actor('HITLER, ADOLF'), Actor('HODDER, KANE'), Actor('NITU, GELU'), Actor('BERGEN, CANDICE')]
+    ends = ['HITLER, ADOLF', 'HODDER, KANE', 'NITU, GELU','BERGEN, CANDICE']
 
     for end in ends:
-        print(search_to_string(dijkstra_table.start, dijkstra_table.get_path_to(end)))
+        print(search_to_string(dijkstra_table.start, dijkstra_table.get_path_to(Actor(end))))
 
 if __name__ == "__main__":
     import cProfile
