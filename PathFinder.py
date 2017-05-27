@@ -6,12 +6,14 @@ import pickle
 
 
 def search_to_string(start_vertex, path_with_edges):
-    string = '{:s} -- '.format(str(start_vertex))
-    path_string = []
+    path_string = ['{:s}'.format(str(start_vertex))]
     for v, e in path_with_edges:
         path_string.append('[{:s}] --> {:s}'.format(str(e), str(v)))
-    string += ' -- '.join(path_string)
-    return string
+    return ' -- '.join(path_string)
+
+
+def path_to_bacon_number(path):
+    return len(path)
 
 
 def main():
@@ -37,11 +39,22 @@ def main():
         with open(dijkstra_table_serialized_filename, 'rb') as f:
             dijkstra_table = pickle.load(f)
 
-    ends = ['HITLER, ADOLF', 'HODDER, KANE', 'NITU, GELU','BERGEN, CANDICE']
+    ends = ['BACON, KEVIN (I)', 'ABDOO, ROSE', 'BERGEN, CANDICE', 'HITLER, ADOLF', 'NITU, GELU', 'TABAKIN, RALPH']
 
     for end in ends:
         print(search_to_string(dijkstra_table.start, dijkstra_table.get_path_to(Actor(end))))
+    print()
+
+    bacon_counts = {i: 0 for i in range(6)}
+    for v in dijkstra_table:
+        bacon_counts[path_to_bacon_number(dijkstra_table.get_path_to(v))] += 1
+
+    print('Bacon Number Table')
+    for num, count in bacon_counts.items():
+        if count != 0:
+            print('{:d}: {:d}'.format(num, count))
 
 if __name__ == "__main__":
-    import cProfile
-    cProfile.run('main()')
+    # import cProfile
+    # cProfile.run('main()')
+    main()
