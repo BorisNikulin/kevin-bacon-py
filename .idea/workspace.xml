@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="76d30caf-4077-44b4-978d-6f463a73d730" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/kevin bacon.iml" afterPath="$PROJECT_DIR$/.idea/kevin bacon.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PathFinder.py" afterPath="$PROJECT_DIR$/PathFinder.py" />
     </list>
     <ignored path="kevin bacon.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,7 +25,7 @@
       <file leaf-file-name="PathFinder.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/PathFinder.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="424">
+            <state relative-caret-position="628">
               <caret line="54" column="47" lean-forward="false" selection-start-line="54" selection-start-column="47" selection-end-line="54" selection-end-column="47" />
               <folding>
                 <element signature="e#0#27#0" expanded="true" />
@@ -196,24 +193,6 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="DijkstraTable" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="kevin bacon" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DijkstraTable.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <method />
-    </configuration>
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -310,14 +289,12 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method />
     </configuration>
-    <list size="2">
+    <list size="1">
       <item index="0" class="java.lang.String" itemvalue="Python.PathFinder" />
-      <item index="1" class="java.lang.String" itemvalue="Python.DijkstraTable" />
     </list>
     <recent_temporary>
-      <list size="2">
+      <list size="1">
         <item index="0" class="java.lang.String" itemvalue="Python.PathFinder" />
-        <item index="1" class="java.lang.String" itemvalue="Python.DijkstraTable" />
       </list>
     </recent_temporary>
     <configuration default="true" type="tests" factoryName="Attests">
@@ -382,7 +359,14 @@
       <option name="project" value="LOCAL" />
       <updated>1495893812480</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="project setting changes">
+      <created>1495893839530</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1495893839530</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TodoView">
@@ -452,7 +436,8 @@
     <MESSAGE value="PathFinder small change of where the end point strings become Actor objects" />
     <MESSAGE value="added iterators to DijkstraTable" />
     <MESSAGE value="search_to_string works with empty paths and compute all bacon nums" />
-    <option name="LAST_COMMIT_MESSAGE" value="search_to_string works with empty paths and compute all bacon nums" />
+    <MESSAGE value="project setting changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="project setting changes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -742,7 +727,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/PathFinder.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="424">
+        <state relative-caret-position="628">
           <caret line="54" column="47" lean-forward="false" selection-start-line="54" selection-start-column="47" selection-end-line="54" selection-end-column="47" />
           <folding>
             <element signature="e#0#27#0" expanded="true" />
