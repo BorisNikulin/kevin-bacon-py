@@ -29,6 +29,9 @@ class ALGraph:
     def __getitem__(self, item):
         return self.get_adjacent(item)
 
+    def __len__(self):
+        return len(self.__graph)
+
     def read_csv(self, file_path, sep=','):
         file = open(file_path, 'r')
         movie_to_actors = {}
