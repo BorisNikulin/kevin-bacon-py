@@ -39,3 +39,9 @@ class DijkstraTable:
 
         path.reverse()
         return path
+
+    def __iter__(self):
+        return iter(self.__table)
+
+    def items(self):
+        return self.__table.items()
