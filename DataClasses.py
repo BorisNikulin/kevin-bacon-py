@@ -29,7 +29,7 @@ class Movie:
         self.year = year
 
     def get_weight(self):
-        return 1
+        return 1 + (2015 - self.year)
 
     def __lt__(self, other):
         if self.title < other.title:

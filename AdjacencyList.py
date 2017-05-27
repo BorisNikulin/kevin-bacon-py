@@ -32,14 +32,13 @@ class ALGraph:
     def read_csv(self, file_path, sep=','):
         file = open(file_path, 'r')
         movie_to_actors = {}
-        graph = ALGraph()
 
         file.readline()  # skip header
 
         for line in file:
             actor_movie_year = line.strip().split(sep)
             actor = Actor(actor_movie_year[0])
-            movie = Movie(actor_movie_year[1], actor_movie_year[2])
+            movie = Movie(actor_movie_year[1], int(actor_movie_year[2]))
             if movie not in movie_to_actors:
                 movie_to_actors[movie] = [actor]
             else:

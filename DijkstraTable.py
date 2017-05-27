@@ -3,14 +3,12 @@ from queue import PriorityQueue
 
 class DijkstraTable:
 
-    def __init__(self, start, graph=None):
+    def __init__(self, start):
         self.start = start
         # v -> (pred, edge, cost)
         self.__table = {}
-        if graph is not None:
-            self.generate_table(graph)
 
-    def generate_table(self, graph):
+    def generate_table(self, graph, adj_func, edge_weight_func):
         visited = PriorityQueue()
 
         for v in graph.vertices():
@@ -23,8 +21,8 @@ class DijkstraTable:
         while not visited.empty():
             cost, v = visited.get()
 
-            for adj_v, e in graph.get_adjacent(v):
-                new_cost = cost + e.get_weight()
+            for adj_v, e in adj_func(v):
+                new_cost = cost + edge_weight_func(e)
                 if new_cost < self.__table[adj_v][2]:
                     self.__table[adj_v] = (v, e, new_cost)
                     visited.put((new_cost, adj_v))
