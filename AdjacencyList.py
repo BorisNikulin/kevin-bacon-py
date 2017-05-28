@@ -1,5 +1,4 @@
 from queue import Queue
-from DataClasses import *
 
 
 class ALGraph:
@@ -32,28 +31,29 @@ class ALGraph:
     def __len__(self):
         return len(self.__graph)
 
-    def read_csv(self, file_path, sep=','):
-        file = open(file_path, 'r')
-        movie_to_actors = {}
+    def read_csv(self, file_path, vertex_class, edge_class, sep=','):
+        """ Reads a csv file with 3 columns (not checked)
+        that has a vertex, then a an edge label,
+        and a float weight"""
+        with open(file_path, 'r') as file:
+            movie_to_actors = {}
 
-        file.readline()  # skip header
+            file.readline()  # skip header
 
-        for line in file:
-            actor_movie_year = line.strip().split(sep)
-            actor = Actor(actor_movie_year[0])
-            movie = Movie(actor_movie_year[1], int(actor_movie_year[2]))
-            if movie not in movie_to_actors:
-                movie_to_actors[movie] = [actor]
-            else:
-                movie_to_actors[movie].append(actor)
+            for line in file:
+                vertex_edge_weight = line.strip().split(sep)
+                vertex = vertex_class(vertex_edge_weight[0])
+                edge = edge_class(vertex_edge_weight[1], float(vertex_edge_weight[2]))
+                if edge not in movie_to_actors:
+                    movie_to_actors[edge] = [vertex]
+                else:
+                    movie_to_actors[edge].append(vertex)
 
-        for movie in movie_to_actors:
-            actors = movie_to_actors[movie]
-            for i in range(len(actors)):
-                for j in range(i + 1, len(actors)):
-                    self.add_vertex_edge_undirected(actors[i], movie, actors[j])
-
-        file.close()
+            for edge in movie_to_actors:
+                actors = movie_to_actors[edge]
+                for i in range(len(actors)):
+                    for j in range(i + 1, len(actors)):
+                        self.add_vertex_edge_undirected(actors[i], edge, actors[j])
 
     def bfs(self, start, goal):
         frontier = Queue()

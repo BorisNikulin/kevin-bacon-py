@@ -8,10 +8,15 @@ class DijkstraTable:
         # v -> (pred, edge, cost)
         self.__table = {}
 
-    def generate_table(self, graph, adj_func, edge_weight_func):
+    def generate_table(self, vertices, adj_func, edge_weight_func):
+        """ Generates a dijkstra table given an iterator of vertices
+        a function for getting an iterator of adjacent vertices which
+        is a tuple of the adjacent vertex and the edge, and a function
+        for given and edge to give back a weight
+        that can be added to floats"""
         visited = PriorityQueue()
 
-        for v in graph.vertices():
+        for v in vertices:
             if v != self.start:
                 self.__table[v] = (None, None, float('inf'))
 
@@ -27,7 +32,9 @@ class DijkstraTable:
                     self.__table[adj_v] = (v, e, new_cost)
                     visited.put((new_cost, adj_v))
 
-    def get_path_to(self, goal):
+    def path_to(self, goal):
+        """ Generates a list of vertex edge pairs from
+        one past the start all the way to the end."""
         path = []
         current = goal
         while current != self.start:
@@ -37,6 +44,16 @@ class DijkstraTable:
 
         path.reverse()
         return path
+
+    def len_to(self, goal):
+        """ Counts the length of the path or number
+        of edges from the start to the goal."""
+        path_len = 0
+        current = goal
+        while current != self.start:
+            path_len += 1
+            current, _, _ = self.__table[current]
+        return path_len
 
     def __len__(self):
         return len(self.__table)
