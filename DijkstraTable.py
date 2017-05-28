@@ -46,3 +46,6 @@ class DijkstraTable:
 
     def items(self):
         return self.__table.items()
+
+    def __getitem__(self, item):
+        return self.__table[item]
