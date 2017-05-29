@@ -58,8 +58,8 @@ class ALGraph:
     def bfs(self, start, goal):
         frontier = Queue()
         frontier.put(start)
+        # v -> (pred, edge)
         came_from = {}
-        adj_edge = {}
 
         while not frontier.empty():
             current = frontier.get()
@@ -70,14 +70,13 @@ class ALGraph:
             for v, e in self.get_adjacent(current):
                 if v not in came_from:
                     frontier.put(v)
-                    came_from[v] = current
-                    adj_edge[v] = e
+                    came_from[v] = (current, e)
 
         result = []
         current = goal
         while current != start:
+            current, adj_edge = came_from[current]
             result.append((current, adj_edge[current]))
-            current = came_from[current]
 
         result.reverse()
         return start, result
