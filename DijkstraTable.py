@@ -17,8 +17,7 @@ class DijkstraTable:
         visited = PriorityQueue()
 
         for v in vertices:
-            if v != self.start:
-                self.__table[v] = (None, None, float('inf'))
+            self.__table[v] = (None, None, float('inf'))
 
         self.__table[self.start] = (None, None, 0)
         visited.put((0.0, self.start))
