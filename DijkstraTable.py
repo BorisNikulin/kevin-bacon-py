@@ -19,7 +19,7 @@ class DijkstraTable:
         for v in vertices:
             self.__table[v] = (None, None, float('inf'))
 
-        self.__table[self.start] = (None, None, 0)
+        self.__table[self.start] = (None, None, 0.0)
         visited.put((0.0, self.start))
 
         while not visited.empty():
