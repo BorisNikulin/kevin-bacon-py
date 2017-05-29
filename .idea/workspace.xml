@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="76d30caf-4077-44b4-978d-6f463a73d730" name="Default" comment="optimized bacon number creation, generalized classes, documentation">
+    <list default="true" id="76d30caf-4077-44b4-978d-6f463a73d730" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AdjacencyList.py" afterPath="$PROJECT_DIR$/AdjacencyList.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PathFinder.py" afterPath="$PROJECT_DIR$/PathFinder.py" />
     </list>
     <ignored path="kevin bacon.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -23,11 +23,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="PathFinder.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="PathFinder.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PathFinder.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="387">
-              <caret line="59" column="16" lean-forward="true" selection-start-line="59" selection-start-column="16" selection-end-line="59" selection-end-column="16" />
+            <state relative-caret-position="1224">
+              <caret line="72" column="0" lean-forward="true" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
               <folding>
                 <element signature="e#0#27#0" expanded="true" />
               </folding>
@@ -35,11 +35,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DijkstraTable.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="DijkstraTable.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/DijkstraTable.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="33" lean-forward="false" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
+            <state relative-caret-position="628">
+              <caret line="64" column="32" lean-forward="false" selection-start-line="64" selection-start-column="32" selection-end-line="64" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -48,8 +48,8 @@
       <file leaf-file-name="AdjacencyList.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AdjacencyList.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="625">
-              <caret line="71" column="35" lean-forward="true" selection-start-line="71" selection-start-column="35" selection-end-line="71" selection-end-column="35" />
+            <state relative-caret-position="765">
+              <caret line="45" column="62" lean-forward="true" selection-start-line="45" selection-start-column="62" selection-end-line="45" selection-end-column="62" />
               <folding />
             </state>
           </provider>
@@ -58,8 +58,8 @@
       <file leaf-file-name="DataClasses.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DataClasses.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="31" column="24" lean-forward="false" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="24" />
+            <state relative-caret-position="255">
+              <caret line="27" column="26" lean-forward="false" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -68,8 +68,8 @@
       <file leaf-file-name="movie_casts.tsv" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/movie_casts.tsv">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2448">
-              <caret line="144" column="0" lean-forward="false" selection-start-line="144" selection-start-column="0" selection-end-line="144" selection-end-column="11" />
+            <state relative-caret-position="170">
+              <caret line="10" column="56" lean-forward="false" selection-start-line="10" selection-start-column="56" selection-end-line="10" selection-end-column="56" />
               <folding />
             </state>
           </provider>
@@ -92,8 +92,9 @@
       <list>
         <option value="$PROJECT_DIR$/DataClasses.py" />
         <option value="$PROJECT_DIR$/DijkstraTable.py" />
-        <option value="$PROJECT_DIR$/PathFinder.py" />
         <option value="$PROJECT_DIR$/AdjacencyList.py" />
+        <option value="$PROJECT_DIR$/movie_casts.tsv" />
+        <option value="$PROJECT_DIR$/PathFinder.py" />
       </list>
     </option>
   </component>
@@ -135,7 +136,6 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -150,6 +150,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -393,7 +394,14 @@
       <option name="project" value="LOCAL" />
       <updated>1495945499270</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="combined parallel dictionaries in bfs into one">
+      <created>1496016823933</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1496016823933</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TodoView">
@@ -409,8 +417,9 @@
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.108208954" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.10927505" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32917964" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3322949" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" x="2" y="13" width="1916" height="1053" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32917964" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -421,7 +430,6 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -476,17 +484,11 @@
     <MESSAGE value="removed DijkstraTable run config" />
     <MESSAGE value="added __len__ to DijkstraTable and ALGraph" />
     <MESSAGE value="optimized bacon number creation, generalized classes, documentation" />
-    <option name="LAST_COMMIT_MESSAGE" value="optimized bacon number creation, generalized classes, documentation" />
+    <MESSAGE value="combined parallel dictionaries in bfs into one" />
+    <option name="LAST_COMMIT_MESSAGE" value="combined parallel dictionaries in bfs into one" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/PathFinder.py</url>
-          <line>78</line>
-          <option name="timeStamp" value="26" />
-        </line-breakpoint>
-      </breakpoints>
       <default-breakpoints>
         <breakpoint suspend="NONE" type="python-exception">
           <properties notifyOnTerminate="true" exception="BaseException">
@@ -494,7 +496,7 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="27" />
+      <option name="time" value="28" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -842,14 +844,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/movie_casts.tsv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2448">
-          <caret line="144" column="0" lean-forward="false" selection-start-line="144" selection-start-column="0" selection-end-line="144" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -866,35 +860,43 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/DataClasses.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="31" column="24" lean-forward="false" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="24" />
+        <state relative-caret-position="255">
+          <caret line="27" column="26" lean-forward="false" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DijkstraTable.py">
+    <entry file="file://$PROJECT_DIR$/movie_casts.tsv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="33" lean-forward="false" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
+        <state relative-caret-position="170">
+          <caret line="10" column="56" lean-forward="false" selection-start-line="10" selection-start-column="56" selection-end-line="10" selection-end-column="56" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AdjacencyList.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="625">
-          <caret line="71" column="35" lean-forward="true" selection-start-line="71" selection-start-column="35" selection-end-line="71" selection-end-column="35" />
+        <state relative-caret-position="765">
+          <caret line="45" column="62" lean-forward="true" selection-start-line="45" selection-start-column="62" selection-end-line="45" selection-end-column="62" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/PathFinder.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="387">
-          <caret line="59" column="16" lean-forward="true" selection-start-line="59" selection-start-column="16" selection-end-line="59" selection-end-column="16" />
+        <state relative-caret-position="1224">
+          <caret line="72" column="0" lean-forward="true" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
           <folding>
             <element signature="e#0#27#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DijkstraTable.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="628">
+          <caret line="64" column="32" lean-forward="false" selection-start-line="64" selection-start-column="32" selection-end-line="64" selection-end-column="32" />
+          <folding />
         </state>
       </provider>
     </entry>

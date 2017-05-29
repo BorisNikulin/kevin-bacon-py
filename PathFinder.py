@@ -68,6 +68,9 @@ def main():
     for v in dijkstra_table_weighted:
         bacon_counts_weighted[dijkstra_table_weighted.len_to(v)] += 1
 
+    print('Number of Actors: {:d}'.format(len(dijkstra_table)))
+    print()
+
     print('Bacon Number Table Unweighted')
     for num, count in bacon_counts.items():
         if count != 0:
@@ -81,4 +84,5 @@ def main():
 if __name__ == "__main__":
     # import cProfile
     # cProfile.run('main()')
+
     main()
