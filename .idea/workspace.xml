@@ -26,8 +26,8 @@
       <file leaf-file-name="PathFinder.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PathFinder.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="76" column="40" lean-forward="true" selection-start-line="76" selection-start-column="40" selection-end-line="76" selection-end-column="40" />
+            <state relative-caret-position="1324">
+              <caret line="85" column="18" lean-forward="false" selection-start-line="85" selection-start-column="18" selection-end-line="85" selection-end-column="18" />
               <folding>
                 <element signature="e#0#27#0" expanded="true" />
               </folding>
@@ -38,8 +38,8 @@
       <file leaf-file-name="DijkstraTable.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/DijkstraTable.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="24" column="34" lean-forward="true" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
+            <state relative-caret-position="356">
+              <caret line="46" column="26" lean-forward="true" selection-start-line="46" selection-start-column="26" selection-end-line="46" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -93,8 +93,8 @@
         <option value="$PROJECT_DIR$/DataClasses.py" />
         <option value="$PROJECT_DIR$/AdjacencyList.py" />
         <option value="$PROJECT_DIR$/movie_casts.tsv" />
-        <option value="$PROJECT_DIR$/PathFinder.py" />
         <option value="$PROJECT_DIR$/DijkstraTable.py" />
+        <option value="$PROJECT_DIR$/PathFinder.py" />
       </list>
     </option>
   </component>
@@ -422,7 +422,14 @@
       <option name="project" value="LOCAL" />
       <updated>1496039820961</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="more explicit floating point 0">
+      <created>1496040406498</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1496040406498</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TodoView">
@@ -509,7 +516,8 @@
     <MESSAGE value="update main()" />
     <MESSAGE value="documentation fix" />
     <MESSAGE value="removed useless if" />
-    <option name="LAST_COMMIT_MESSAGE" value="removed useless if" />
+    <MESSAGE value="more explicit floating point 0" />
+    <option name="LAST_COMMIT_MESSAGE" value="more explicit floating point 0" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -520,7 +528,7 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="29" />
+      <option name="time" value="30" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -908,8 +916,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/PathFinder.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="76" column="40" lean-forward="true" selection-start-line="76" selection-start-column="40" selection-end-line="76" selection-end-column="40" />
+        <state relative-caret-position="1324">
+          <caret line="85" column="18" lean-forward="false" selection-start-line="85" selection-start-column="18" selection-end-line="85" selection-end-column="18" />
           <folding>
             <element signature="e#0#27#0" expanded="true" />
           </folding>
@@ -918,8 +926,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/DijkstraTable.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="24" column="34" lean-forward="true" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
+        <state relative-caret-position="356">
+          <caret line="46" column="26" lean-forward="true" selection-start-line="46" selection-start-column="26" selection-end-line="46" selection-end-column="26" />
           <folding />
         </state>
       </provider>

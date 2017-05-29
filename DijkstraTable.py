@@ -37,9 +37,8 @@ class DijkstraTable:
         path = []
         current = goal
         while current != self.start:
-            pred, edge, cost = self.__table[current]
+            current, edge, _ = self.__table[current]
             path.append((current, edge))
-            current = pred
 
         path.reverse()
         return path
