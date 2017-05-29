@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="76d30caf-4077-44b4-978d-6f463a73d730" name="Default" comment="">
+    <list default="true" id="76d30caf-4077-44b4-978d-6f463a73d730" name="Default" comment="documentation fix">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PathFinder.py" afterPath="$PROJECT_DIR$/PathFinder.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DijkstraTable.py" afterPath="$PROJECT_DIR$/DijkstraTable.py" />
     </list>
     <ignored path="kevin bacon.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,7 +26,7 @@
       <file leaf-file-name="PathFinder.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PathFinder.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1224">
+            <state relative-caret-position="952">
               <caret line="72" column="0" lean-forward="true" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
               <folding>
                 <element signature="e#0#27#0" expanded="true" />
@@ -38,8 +38,8 @@
       <file leaf-file-name="DijkstraTable.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/DijkstraTable.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="628">
-              <caret line="64" column="32" lean-forward="false" selection-start-line="64" selection-start-column="32" selection-end-line="64" selection-end-column="32" />
+            <state relative-caret-position="119">
+              <caret line="15" column="36" lean-forward="false" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -91,10 +91,10 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/DataClasses.py" />
-        <option value="$PROJECT_DIR$/DijkstraTable.py" />
         <option value="$PROJECT_DIR$/AdjacencyList.py" />
         <option value="$PROJECT_DIR$/movie_casts.tsv" />
         <option value="$PROJECT_DIR$/PathFinder.py" />
+        <option value="$PROJECT_DIR$/DijkstraTable.py" />
       </list>
     </option>
   </component>
@@ -401,7 +401,21 @@
       <option name="project" value="LOCAL" />
       <updated>1496016823933</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="update main()">
+      <created>1496033519985</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1496033519985</updated>
+    </task>
+    <task id="LOCAL-00012" summary="documentation fix">
+      <created>1496034770545</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1496034770546</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TodoView">
@@ -485,7 +499,9 @@
     <MESSAGE value="added __len__ to DijkstraTable and ALGraph" />
     <MESSAGE value="optimized bacon number creation, generalized classes, documentation" />
     <MESSAGE value="combined parallel dictionaries in bfs into one" />
-    <option name="LAST_COMMIT_MESSAGE" value="combined parallel dictionaries in bfs into one" />
+    <MESSAGE value="update main()" />
+    <MESSAGE value="documentation fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="documentation fix" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -884,7 +900,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/PathFinder.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1224">
+        <state relative-caret-position="952">
           <caret line="72" column="0" lean-forward="true" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
           <folding>
             <element signature="e#0#27#0" expanded="true" />
@@ -894,8 +910,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/DijkstraTable.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="628">
-          <caret line="64" column="32" lean-forward="false" selection-start-line="64" selection-start-column="32" selection-end-line="64" selection-end-column="32" />
+        <state relative-caret-position="119">
+          <caret line="15" column="36" lean-forward="false" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
           <folding />
         </state>
       </provider>

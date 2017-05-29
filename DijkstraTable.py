@@ -9,11 +9,11 @@ class DijkstraTable:
         self.__table = {}
 
     def generate_table(self, vertices, adj_func, edge_weight_func):
-        """ Generates a dijkstra table given an iterator of vertices
+        """ Generates a dijkstra table given an iterator of vertices,
         a function for getting an iterator of adjacent vertices which
         is a tuple of the adjacent vertex and the edge, and a function
-        for given and edge to give back a weight
-        that can be added to floats"""
+        for given an edge to give back a weight
+        that can be added to floats."""
         visited = PriorityQueue()
 
         for v in vertices:
